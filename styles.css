@@ -1,0 +1,39 @@
+
+body{
+    background-color: #e7d1ff;
+    font-family: Arial, sans-serif;
+			margin: 20px;
+}
+
+.grid-column{
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 0.5px;
+}
+
+.grid-item{
+    background-color: aliceblue;
+    padding: 10.5px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.hover-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 50px;
+    background-color: #cf8de4;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-bottom: -330px;
+  }
+
+  .grid-item:hover .hover-text {
+    opacity: 1;
+  }
